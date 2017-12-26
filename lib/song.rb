@@ -29,5 +29,9 @@ end
     genres_hash.tap {|hash| @@genres.each{ |genre| hash[genre] += 1}}
   end
 
+  def self.artist_count
+    artists_hash = Hash.new(0)
+    artists_hash.tap { |hash| @@artists.each { |artist| hash[artist] += 1 } }
+  end
 
 end

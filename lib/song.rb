@@ -18,5 +18,10 @@ class Song
 end
 
   def self.artists
-    @@artists
+    @@artists.uniq { |artist| artist }
+  end
+
+  def self.genres
+    @@genres.uniq {|genre| genre}
+  end
 end

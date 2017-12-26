@@ -5,8 +5,8 @@ class Song
   @@artists = []
   @@genres
   def initialize(name,artist,genre)
-    @@count += 1
     @@artists << artist unless @@artists.include?(artist)
+      @@count += 1
   end
   end
 

@@ -29,5 +29,5 @@ end
     genres_hash.tap {|hash| @@genres.each{ |genre| hash[genre] += 1}}
   end
 
-  
+
 end
